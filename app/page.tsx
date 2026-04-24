@@ -95,6 +95,7 @@ export default function Home() {
           <a href="#work">Work</a>
           <a href="#process">Process</a>
           <a href="#about">About</a>
+          <a href="#faq">FAQ</a>
           <a href="#contact" className="nav-cta">
             Start Your Project
           </a>
@@ -136,6 +137,9 @@ export default function Home() {
         </a>
         <a href="#about" onClick={() => setMenuOpen(false)}>
           About
+        </a>
+        <a href="#faq" onClick={() => setMenuOpen(false)}>
+          FAQ
         </a>
         <a href="#contact" onClick={() => setMenuOpen(false)}>
           Contact
@@ -365,41 +369,8 @@ export default function Home() {
         </section>
       </Reveal>
 
-      <Reveal>
-        <section className="section-block">
-          <p className="section-tag">FAQ</p>
-          <h2 className="section-title">Frequently asked questions</h2>
-
-          <div className="card-grid three">
-            <div className="info-card">
-              <h3>How much does a website cost?</h3>
-              <p>
-                Pricing depends on the type of website, number of sections, and custom
-                features. Contact us to get a quote for your project.
-              </p>
-            </div>
-
-            <div className="info-card">
-              <h3>How long does it take?</h3>
-              <p>
-                Most websites can be completed within a few days to a couple of weeks,
-                depending on the project scope.
-              </p>
-            </div>
-
-            <div className="info-card">
-              <h3>Do you make mobile-friendly websites?</h3>
-              <p>
-                Yes. All our websites are designed to work smoothly on mobile, tablet,
-                and desktop devices.
-              </p>
-            </div>
-          </div>
-        </section>
-      </Reveal>
-
       <Reveal> 
-        <section className="section-block">
+        <section id="faq" className="section-block">
           <p className="section-tag">FAQ</p>
           <h2 className="section-title">Frequently Asked Questions</h2>
 
@@ -475,7 +446,13 @@ export default function Home() {
               <div>
                 📧 <strong>Email</strong>
                 <br />
-                pixelcraftstudio91@gmail.com
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=pixelcraftstudio91@gmail.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  pixelcraftstudio91@gmail.com
+                </a>
               </div>
 
               <div>
