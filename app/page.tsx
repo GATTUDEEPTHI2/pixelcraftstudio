@@ -274,6 +274,13 @@ export default function Home() {
             Services built for brands that want a refined online presence.
           </h2>
 
+          <p className="contact-text">
+            We offer professional website design services in Hyderabad and Karimnagar,
+            helping businesses build modern, responsive, and conversion-focused websites.
+            Whether you need a business website, portfolio, or landing page, we deliver
+            solutions tailored to your goals.
+          </p>
+
           <div className="card-grid three">
             {services.map((item) => (
               <div className="info-card" key={item.title}>
@@ -358,8 +365,12 @@ export default function Home() {
               <p>
                 We create modern websites for businesses that want elegant
                 design, clear presentation, and stronger trust from potential
-                clients. PixelCraftStudio is based in Hyderabad and serves clients
-                in Karimnagar and across India.
+                clients.
+              </p>
+
+              <p>
+                PixelCraftStudio is based in Hyderabad and serves clients in
+                Karimnagar and across India.
               </p>
             </div>
 
