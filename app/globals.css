@@ -1054,6 +1054,11 @@ textarea::placeholder {
   color: #d4af37;
 }
 
+.contact-details span {
+  color: #d6e0e8;
+  font-weight: 500;
+}
+
 .contact-details a {
   color: #d4af37;
   text-decoration: none;
