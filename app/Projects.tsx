@@ -12,20 +12,25 @@ export default function Projects() {
   const projects: Project[] = [
     {
       title: "Cafe Website",
-      text: "Modern and attractive website design for cafes and restaurants.",
+      text: "Demo website concept for cafes to showcase menu and attract customers.",
       image: "/project1.jpg",
     },
     {
       title: "Business Landing Page",
-      text: "High-converting landing page for generating leads and clients.",
+      text: "Demo landing page designed to generate leads and grow business.",
       image: "/project2.jpg",
     },
     {
       title: "Portfolio Website",
-      text: "Clean and professional portfolio for personal branding.",
+      text: "Demo portfolio website for freelancers and personal branding.",
       image: "/project3.jpg",
     },
   ];
+
+  const whatsappBase = "https://wa.me/919347479356";
+
+  const getWhatsappLink = (message: string) =>
+    `${whatsappBase}?text=${encodeURIComponent(message)}`;
 
   const [activeProject, setActiveProject] = useState<Project | null>(null);
 
@@ -66,8 +71,20 @@ export default function Projects() {
 
               <div className="project-content">
                 <span>0{index + 1}</span>
+                <p className="project-demo-tag">Demo Project</p>
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
+
+                <a
+                  href={getWhatsappLink(
+                    `Hi PixelCraftStudio, I’m interested in the ${item.title} design. Please share details.`
+                  )}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="project-enquire-link"
+                >
+                  Enquire This Design
+                </a>
               </div>
             </div>
           ))}

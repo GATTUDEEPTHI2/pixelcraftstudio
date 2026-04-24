@@ -16,7 +16,7 @@ export default function CTASection() {
             Get Quote
           </a>
           <a
-            href="https://wa.me/918074588452?text=Hi%20PixelCraftStudio%2C%20I%20need%20a%20website."
+            href="https://wa.me/919347479356?text=Hi%20PixelCraftStudio%2C%20I%20need%20a%20website."
             target="_blank"
             rel="noreferrer"
             className="btn btn-secondary"

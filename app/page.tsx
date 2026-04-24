@@ -34,7 +34,7 @@ export default function Home() {
 
   const process = ["Discovery", "Planning", "Design", "Development", "Launch"];
 
-  const whatsappBase = "https://wa.me/918074588452";
+  const whatsappBase = "https://wa.me/919347479356";
 
   const getWhatsappLink = (message: string) =>
     `${whatsappBase}?text=${encodeURIComponent(message)}`;
@@ -96,7 +96,7 @@ export default function Home() {
           <a href="#process">Process</a>
           <a href="#about">About</a>
           <a href="#contact" className="nav-cta">
-            Start Project
+            Start Your Project
           </a>
         </nav>
 
@@ -155,14 +155,11 @@ export default function Home() {
             <div className="eyebrow">PREMIUM • MODERN • CLIENT-FOCUSED</div>
 
             <h1>
-              We create elegant websites that make your business look premium
-              and attract serious clients.
+              We design modern websites that help businesses grow online.
             </h1>
 
-            <p>
-              PixelCraftStudio builds polished, responsive websites for
-              businesses that want a stronger online presence, modern branding,
-              and a more trustworthy first impression.
+            <p className="trust-line">
+                Trusted by startups, small businesses, and personal brands.
             </p>
 
             <p>
@@ -223,9 +220,7 @@ export default function Home() {
 
               <div className="quick-options">
                 <a
-                  href={getWhatsappLink(
-                    "Hi PixelCraftStudio, I need a Business Website. My business type is ____."
-                  )}
+                  href={getWhatsappLink("Hi PixelCraftStudio, I need a Business Website for my business.")}
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -233,9 +228,7 @@ export default function Home() {
                 </a>
 
                 <a
-                  href={getWhatsappLink(
-                    "Hi PixelCraftStudio, I need a Landing Page. My business type is ____."
-                  )}
+                  href={getWhatsappLink("Hi PixelCraftStudio, I need a Landing Page for my service.")}
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -243,9 +236,7 @@ export default function Home() {
                 </a>
 
                 <a
-                  href={getWhatsappLink(
-                    "Hi PixelCraftStudio, I want a Website Redesign. My current website is ____."
-                  )}
+                  href={getWhatsappLink("Hi PixelCraftStudio, I want a Website Redesign.")}
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -253,9 +244,7 @@ export default function Home() {
                 </a>
 
                 <a
-                  href={getWhatsappLink(
-                    "Hi PixelCraftStudio, I want a quote for my website project."
-                  )}
+                  href={getWhatsappLink("Hi PixelCraftStudio, I want a quote for my website project.")}
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -377,6 +366,99 @@ export default function Home() {
       </Reveal>
 
       <Reveal>
+        <section className="section-block">
+          <p className="section-tag">FAQ</p>
+          <h2 className="section-title">Frequently asked questions</h2>
+
+          <div className="card-grid three">
+            <div className="info-card">
+              <h3>How much does a website cost?</h3>
+              <p>
+                Pricing depends on the type of website, number of sections, and custom
+                features. Contact us to get a quote for your project.
+              </p>
+            </div>
+
+            <div className="info-card">
+              <h3>How long does it take?</h3>
+              <p>
+                Most websites can be completed within a few days to a couple of weeks,
+                depending on the project scope.
+              </p>
+            </div>
+
+            <div className="info-card">
+              <h3>Do you make mobile-friendly websites?</h3>
+              <p>
+                Yes. All our websites are designed to work smoothly on mobile, tablet,
+                and desktop devices.
+              </p>
+            </div>
+          </div>
+        </section>
+      </Reveal>
+
+      <Reveal> 
+        <section className="section-block">
+          <p className="section-tag">FAQ</p>
+          <h2 className="section-title">Frequently Asked Questions</h2>
+
+          <div className="card-grid three">
+            <div className="info-card">
+              <h3>How much does a website cost?</h3>
+              <p>
+                Pricing depends on the type of website, features, and design.
+                Contact us to get a custom quote based on your requirements.
+              </p>
+            </div>
+
+            <div className="info-card">
+              <h3>How long does it take to build a website?</h3>
+              <p>
+                Most websites are completed within a few days to a couple of weeks,
+                depending on complexity.
+              </p>
+            </div>
+
+            <div className="info-card">
+              <h3>Do you create mobile-friendly websites?</h3>
+              <p>
+                Yes, all our websites are fully responsive and work perfectly on
+                mobile, tablet, and desktop.
+              </p>
+            </div>
+         </div>
+       </section>
+      </Reveal>
+
+      <Reveal>
+        <section className="section-block">
+          <p className="section-tag">Quick Contact</p>
+          <h2 className="section-title">Talk to us instantly on WhatsApp</h2>
+
+          <div className="highlight-card">
+            <p>
+              Have a project in mind? Chat with us directly on WhatsApp and get a quick
+              response about pricing, timeline, and design ideas.
+            </p>
+
+            <div className="cta-actions">
+              <a
+                href={getWhatsappLink(
+                  "Hi PixelCraftStudio 👋 I want a website for my business."
+                )}
+                target="_blank"
+                rel="noreferrer"
+                className="btn btn-primary"
+              >
+                Chat on WhatsApp  
+              </a>
+           </div>
+          </div>
+        </section>
+      </Reveal>
+
+      <Reveal>
         <section id="contact" className="section-block contact-section">
           <div className="contact-left">
             <p className="section-tag">Contact</p>
@@ -393,13 +475,7 @@ export default function Home() {
               <div>
                 📧 <strong>Email</strong>
                 <br />
-                <a
-                  href="https://mail.google.com/mail/?view=cm&fs=1&to=pixelcraftstudio91@gmail.com&su=Website%20Inquiry"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  pixelcraftstudio91@gmail.com
-                </a>
+                pixelcraftstudio91@gmail.com
               </div>
 
               <div>
@@ -418,11 +494,11 @@ export default function Home() {
                 💬 <strong>WhatsApp</strong>
                 <br />
                 <a
-                  href="https://wa.me/918074588452"
+                  href="https://wa.me/919347479356"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  +91 80745 88452
+                  +91 9347479356
                 </a>
               </div>
             </div>
@@ -463,6 +539,29 @@ export default function Home() {
       </Reveal>
 
       <Reveal>
+        <section className="section-block">
+          <p className="section-tag">Instagram</p>
+          <h2 className="section-title">Follow our design updates</h2>
+          <div className="highlight-card">
+            <p>
+              Follow PixelCraftStudio on Instagram for website design ideas, UI
+              inspiration, and project updates.
+            </p>
+            <div className="cta-actions">
+              <a
+                href="https://www.instagram.com/pixel_craftstudio_01/"
+                target="_blank"
+                rel="noreferrer"
+                className="btn btn-secondary"
+              >
+                Follow on Instagram
+              </a>
+            </div>
+          </div>
+        </section>
+      </Reveal>
+
+      <Reveal>
         <footer className="footer">
           <div>© 2026 PixelCraftStudio. Crafted for modern brands.</div>
           <div className="footer-links">
@@ -474,11 +573,11 @@ export default function Home() {
       </Reveal>
 
       <a href="#contact" className="book-call-sticky" aria-label="Get quote">
-        Get Quote
+        Get Quote on WhatsApp
       </a>
 
       <a
-        href={getWhatsappLink("Hi PixelCraftStudio, I need a website.")}
+        href={getWhatsappLink("Hi PixelCraftStudio 👋 I want a website for my business. Please share details.")}
         target="_blank"
         rel="noreferrer"
         className="whatsapp-float"
