@@ -173,6 +173,10 @@ export default function Home() {
               conversion-driven layouts.
             </p>
 
+            <p>
+              We design modern websites for businesses in Hyderabad, Karimnagar, and across India.
+            </p>
+
             <div className="hero-actions">
               <a href="#work" className="btn btn-primary">
                 View Work
@@ -354,7 +358,8 @@ export default function Home() {
               <p>
                 We create modern websites for businesses that want elegant
                 design, clear presentation, and stronger trust from potential
-                clients.
+                clients. PixelCraftStudio is based in Hyderabad and serves clients
+                in Karimnagar and across India.
               </p>
             </div>
 
@@ -443,6 +448,12 @@ export default function Home() {
             </p>
 
             <div className="contact-details">
+              <div>
+                📍 <strong>Location</strong>
+                 <br />
+                <span>Hyderabad • Karimnagar • All India</span>
+              </div>
+
               <div>
                 📧 <strong>Email</strong>
                 <br />
