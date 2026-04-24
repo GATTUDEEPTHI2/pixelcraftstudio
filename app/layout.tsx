@@ -8,27 +8,45 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Website Design for Businesses & Startups | PixelCraftStudio",
+  title:
+    "Website Design Services in Hyderabad & Karimnagar | PixelCraftStudio",
+
   description:
-    "PixelCraftStudio designs modern, responsive websites for businesses, startups, and cafes across India and globally. Get a premium website that builds trust and converts visitors into clients.",
+    "PixelCraftStudio provides professional website design services in Hyderabad and Karimnagar. We build modern, responsive, and conversion-focused websites for businesses, startups, and personal brands.",
+
   keywords: [
-    "website design India",
-    "freelance web designer",
-    "business website design",
-    "landing page design",
-    "website redesign services",
-    "portfolio website design",
-    "responsive website developer",
+    "website design Hyderabad",
+    "website designer Karimnagar",
+    "business website developer Telangana",
+    "freelance web designer Hyderabad",
+    "responsive website design India",
     "startup website design",
-    "pixelcraftstudio",
+    "portfolio website design",
+    "PixelCraftStudio",
   ],
+
   openGraph: {
     title: "PixelCraftStudio | Premium Website Design",
     description:
-      "Modern, responsive, and conversion-focused websites for businesses and startups. Build a strong online presence with PixelCraftStudio.",
-    url: "https://pixelcraftstudio.vercel.app",
+      "Modern, responsive, and conversion-focused websites for businesses in Hyderabad, Karimnagar, and across India.",
+    url: "https://pixelcraftstudio-eight.vercel.app",
     siteName: "PixelCraftStudio",
     type: "website",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "PixelCraftStudio | Website Design",
+    description:
+      "Professional website design services in Hyderabad and Karimnagar.",
+    images: ["/twitter-image.png"],
   },
 };
 
