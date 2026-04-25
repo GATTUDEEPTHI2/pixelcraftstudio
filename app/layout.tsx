@@ -25,6 +25,16 @@ export const metadata: Metadata = {
     "PixelCraftStudio",
   ],
 
+  icons: {
+    icon: [
+      {
+        url: "/icon.png",
+        sizes: "48x48",
+        type: "image/png",
+      },
+    ],
+  },
+
   openGraph: {
     title: "PixelCraftStudio | Premium Website Design",
     description:
@@ -70,3 +80,4 @@ export default function RootLayout({
 </html>
   );
 }
+
