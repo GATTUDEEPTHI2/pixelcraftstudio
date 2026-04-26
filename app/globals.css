@@ -492,10 +492,11 @@ textarea::placeholder {
 
 .project-image-wrap {
   position: relative;
-  height: 320px;
+  height: 380px;
   overflow: hidden;
   cursor: pointer;
   border-radius: 18px 18px 0 0;
+  border: 1px solid rgba(255,255,255,0.08);
 }
 
 .project-real-image {
@@ -871,7 +872,7 @@ textarea::placeholder {
 
 @media (max-width: 640px) {
   .project-image-wrap {
-    height: 300px;
+    height: 340px;
     padding: 0;
   }
 
