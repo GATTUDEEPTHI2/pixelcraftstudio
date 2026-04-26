@@ -6,14 +6,16 @@ type Project = {
   title: string;
   text: string;
   image: string;
+  liveLink?: string;
 };
 
 export default function Projects() {
   const projects: Project[] = [
     {
-      title: "Cafe Website",
-      text: "Demo website concept for cafes to showcase menu and attract customers.",
-      image: "/project1.jpg",
+      title: "Food Ordering Website",
+      text: "Live restaurant website with menu categories, cart system, checkout, and WhatsApp ordering.",
+      image: "/zenvora-demo.png",
+      liveLink: "https://zenvora-kitchen.onrender.com",
     },
     {
       title: "Business Landing Page",
@@ -61,30 +63,49 @@ export default function Projects() {
                     className="project-view-btn"
                     onClick={(e) => {
                       e.stopPropagation();
-                      setActiveProject(item);
+
+                      if (item.liveLink) {
+                        window.open(item.liveLink, "_blank");
+                      } else {
+                        setActiveProject(item);
+                      }
                     }}
                   >
-                    View Project
+                    {item.liveLink ? "View Live Demo" : "View Project"}
                   </button>
                 </div>
               </div>
 
               <div className="project-content">
                 <span>0{index + 1}</span>
-                <p className="project-demo-tag">Demo Project</p>
+                <p className="project-demo-tag">
+                  {item.liveLink ? "Live Project" : "Demo Project"}
+                </p>
+
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
 
-                <a
-                  href={getWhatsappLink(
-                    `Hi PixelCraftStudio, I’m interested in the ${item.title} design. Please share details.`
-                  )}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="project-enquire-link"
-                >
-                  Enquire This Design
-                </a>
+                {item.liveLink ? (
+                  <a
+                    href={item.liveLink}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="project-enquire-link"
+                  >
+                    View Live Demo
+                  </a>
+                ) : (
+                  <a
+                    href={getWhatsappLink(
+                      `Hi PixelCraftStudio, I’m interested in the ${item.title} design. Please share details.`
+                    )}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="project-enquire-link"
+                  >
+                    Enquire This Design
+                  </a>
+                )}
               </div>
             </div>
           ))}
@@ -118,6 +139,17 @@ export default function Projects() {
               <p className="project-modal-tag">Project Preview</p>
               <h3>{activeProject.title}</h3>
               <p>{activeProject.text}</p>
+
+              {activeProject.liveLink && (
+                <a
+                  href={activeProject.liveLink}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="project-enquire-link"
+                >
+                  View Live Demo
+                </a>
+              )}
             </div>
           </div>
         </div>
