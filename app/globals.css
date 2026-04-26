@@ -492,15 +492,10 @@ textarea::placeholder {
 
 .project-image-wrap {
   position: relative;
-  height: 260px;
+  height: 320px;
   overflow: hidden;
   cursor: pointer;
-  background: #0f172a;
   border-radius: 18px 18px 0 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 12px;
 }
 
 .project-real-image {
@@ -511,13 +506,6 @@ textarea::placeholder {
   border-radius: 12px;
   display: block;
   transition: transform 0.45s ease, filter 0.45s ease;
-}
-
-.project-image-wrap {
-  position: relative;
-  height: 260px;
-  overflow: hidden;
-  border-radius: 18px 18px 0 0;
 }
 
 .project-card:hover .project-real-image {
@@ -883,8 +871,8 @@ textarea::placeholder {
 
 @media (max-width: 640px) {
   .project-image-wrap {
-    height: 240px;
-    padding: 10px;
+    height: 300px;
+    padding: 0;
   }
 
   .project-modal-content h3 {
