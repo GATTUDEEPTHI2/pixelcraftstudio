@@ -15,7 +15,7 @@ export default function Projects() {
       title: "Food Ordering Website",
       text: "Live restaurant website with menu categories, cart system, checkout, and WhatsApp ordering.",
       image: "/zenvora-demo.png",
-      liveLink: "https://zenvora-kitchen.onrender.com",
+      liveLink: "https://zenvora-kitchen.vercel.app/",
     },
     {
       title: "Business Landing Page",
