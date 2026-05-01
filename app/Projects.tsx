@@ -13,9 +13,9 @@ export default function Projects() {
   const projects: Project[] = [
     {
       title: "Food Ordering Website",
-      text: "Live restaurant website with menu categories, cart system, checkout, and WhatsApp ordering.",
+      text: "Fully functional food ordering website with cart, checkout, and WhatsApp ordering system. No commission, direct orders.",
       image: "/zenvora-demo.png",
-      liveLink: "https://zenvora-kitchen.vercel.app/",
+      liveLink: "https://zenvora-kitchen.vercel.app",
     },
     {
       title: "Business Landing Page",
